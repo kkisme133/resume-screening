@@ -1,0 +1,98 @@
+\documentclass[fontset=windows,10pt]{ctexart}
+\usepackage[paperwidth=210mm,paperheight=204mm,top=11mm,bottom=11mm,left=10mm,right=10mm]{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{amssymb}
+\definecolor{cBlue}{HTML}{1F4E79}
+\definecolor{cBlueL}{HTML}{EAF1F8}
+\definecolor{cGreen}{HTML}{2E7D32}
+\definecolor{cGreenL}{HTML}{EAF4EA}
+\definecolor{cOrange}{HTML}{B85C1E}
+\definecolor{cOrangeL}{HTML}{FBEFE6}
+\definecolor{cGrey}{HTML}{6B7785}
+\definecolor{cLine}{HTML}{D6DEE7}
+\definecolor{cDark}{HTML}{1A2733}
+\xeCJKDeclareCharClass{CJK}{"2192, "2190, "2460, "2461, "2462, "2463, "25CF, "25CB, "25A0, "25A1, "2605, "2606, "FF5C}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{1.12}
+
+\newcommand{\stagehead}[2]{%
+  {\setlength{\fboxsep}{2.6mm}\colorbox{#1}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\color{white}\bfseries #2}}}\par\vspace{2.6mm}%
+}
+\newcommand{\substep}[2]{%
+  {\setlength{\fboxsep}{2mm}\colorbox{#1}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#2}}}\par\vspace{2.2mm}%
+}
+
+\begin{document}
+
+{\fontsize{20}{24}\selectfont\bfseries 简历筛选 Skill：从「凭感觉」到「按规则」}\par
+\vspace{2.5mm}
+{\color{cGrey} 输入一份 JD ＋ 一批 PDF 简历　→　输出可排序、可追溯、可视化的候选人名单}\par
+\vspace{2mm}
+\textcolor{cLine}{\rule{\textwidth}{0.8pt}}
+\vspace{5mm}
+
+\noindent
+\begin{minipage}[t]{0.295\textwidth}
+\stagehead{cBlue}{① 定标准}
+{\color{cBlue}\bfseries 每个岗位做一次}\par\vspace{2.8mm}
+\substep{cBlueL}{输入 JD ＋ 业务方口头需求}
+\substep{cBlueL}{AI 生成\textbf{岗位画像问卷}，HR 确认\par\vspace{1.2mm}{\color{cGrey}\footnotesize 门槛不是 AI 猜的，是问出来的}}
+\substep{cBlueL}{产出\textbf{岗位画像卡}（可复用、可校准）\par\vspace{1.4mm}\textbf{门槛}：资质｜证书｜经历\par {\footnotesize（经历须 JD 写明「必须有」）}\par \textbf{雷区}\par 平台筛选条件\par \textbf{加分项}：技能｜经历｜专业优先\par 评分权重（5 维度 100 分）}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.04\textwidth}
+\centering\vspace{26mm}
+{\fontsize{15}{15}\selectfont\color{cLine}$\blacktriangleright$}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.295\textwidth}
+\stagehead{cGreen}{② 跑简历}
+{\color{cGreen}\bfseries 每批简历跑一次}\par\vspace{2.8mm}
+\substep{cGreenL}{批量解析 PDF → 结构化字段\par\vspace{1.2mm}{\color{cGrey}\footnotesize 只抄事实，不做判断}}
+\substep{cGreenL}{\textbf{门槛判断} → 通过 ｜ 待定 ｜ 淘汰}
+\substep{cGreenL}{\textbf{打分}（通过 ＋ 待定都打分）\par\vspace{1.4mm}硬技能 25　相关经历 25\par 成果证据 20　成长性 15\par 投入稳定性 15}
+\substep{cGreenL}{软性素质不占分\par\vspace{1.2mm}{\color{cGrey}\footnotesize 打标签 ＋ 生成面试验证题}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.04\textwidth}
+\centering\vspace{26mm}
+{\fontsize{15}{15}\selectfont\color{cLine}$\blacktriangleright$}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.295\textwidth}
+\stagehead{cOrange}{③ 出结果}
+{\color{cOrange}\bfseries 三件套 ＋ 持续校准}\par\vspace{2.8mm}
+\substep{cOrangeL}{\textbf{Excel 汇总表}\par\vspace{1.2mm}{\color{cGrey}\footnotesize 按总分排序，可直接用}}
+\substep{cOrangeL}{\textbf{单人卡片 PNG}\par\vspace{1.2mm}{\color{cGrey}\footnotesize 一览式可视化，方便转发}}
+\substep{cOrangeL}{\textbf{深度报告 MD}\par\vspace{1.2mm}{\color{cGrey}\footnotesize 得分依据 ＋ 优势 ＋ 存疑点 ＋ 面试建议}}
+\substep{cOrangeL}{\textbf{校准}\par\vspace{1.2mm}{\color{cGrey}\footnotesize 用 HR 的实际决定反推，调权重和锚点}}
+\end{minipage}
+
+\vspace{7mm}
+\textcolor{cLine}{\rule{\textwidth}{0.8pt}}
+\vspace{5mm}
+
+{\setlength{\fboxsep}{3.5mm}\colorbox{cDark}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{%
+{\color{white}\bfseries 核心规则：只有「结构性内容」才能当门槛}\par\vspace{2mm}
+{\color{white}\footnotesize 门槛只放三类 —— 资质（学历 / 在读 / 毕业年份 / 专业）、证书（JD 要求且有客观判定标准）、经历（JD 明确写「必须有」）。\par
+技能、自我评价、到岗时间、实习时长、期望城市 —— 都不能当门槛：技能写了不代表会，平台字段简历里本来就没有。这两类只加分 ＋ 面试验证。}}}
+
+\vspace{6mm}
+
+\noindent
+\begin{minipage}[t]{0.235\textwidth}
+{\color{cBlue}\bfseries 可追溯}\par\vspace{1.5mm}
+{\footnotesize 每条结论都附简历原文，抓不到证据就写「简历未体现」}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.235\textwidth}
+{\color{cBlue}\bfseries 不脑补}\par\vspace{1.5mm}
+{\footnotesize 不替候选人补充经历，不按学校名气、姓名、籍贯做推断}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.235\textwidth}
+{\color{cBlue}\bfseries 合规}\par\vspace{1.5mm}
+{\footnotesize 性别、年龄、婚育、籍贯、民族、照片不参与评分}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.235\textwidth}
+{\color{cBlue}\bfseries AI 只出建议}\par\vspace{1.5mm}
+{\footnotesize 输出的是初筛参考，最终录用判断以面试为准}
+\end{minipage}
+
+\end{document}

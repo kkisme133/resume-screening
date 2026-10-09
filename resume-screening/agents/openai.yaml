@@ -1,0 +1,4 @@
+interface:
+  display_name: 简历筛选（实习）
+  short_description: 按确认好的岗位标准批量初筛实习简历，输出可排序、可追溯的结果
+  default_prompt: 用 $resume-screening 帮我筛这批实习简历

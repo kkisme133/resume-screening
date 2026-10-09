@@ -1,0 +1,10 @@
+# LaTeX 编译产物
+_build/
+*.aux
+*.log
+*.out
+*.toc
+
+# 系统文件
+.DS_Store
+Thumbs.db
